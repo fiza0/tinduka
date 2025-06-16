@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile - Tinduka</title>
+  <link rel="stylesheet" href="userprofile.css">
+</head>
+<body>
+
+  <h1>User Profile</h1>
+  <div>
+    <p><strong>Username:</strong> USER NAME</p>
+  </div>
+
+  <form action="/update-profile" method="post">
+    <label for="userMessage">Your Message</label>
+    <textarea id="userMessage" name="userMessage" rows="4" cols="50"></textarea>
+
+    <button type="submit" name="action" value="unsubscribe">Unsubscribe</button>
+  </form>
+
+  <section>
+    <h2>Playlists</h2>
+    <div class="playlist-grid">
+      <div style="background-color: gold;"></div>
+      <div style="background-color: red;"></div>
+      <div style="background-color: green;"></div>
+      <div style="background-color: blue;"></div>
+      <div style="background-color: purple;"></div>
+      <div style="background-color: gray;"></div>
+    </div>
+  </section>
+
+</body>
+</html>

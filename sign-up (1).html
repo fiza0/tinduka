@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - Tinduka</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+  <h1>Sign Up</h1>
+  <form action="/signup" method="post">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label>Date of Birth</label>
+    <div>
+      <input type="text" name="dob_day" placeholder="dd" maxlength="2" size="2">
+      <input type="text" name="dob_month" placeholder="mm" maxlength="2" size="2">
+      <input type="text" name="dob_year" placeholder="yyyy" maxlength="4" size="4">
+    </div>
+
+    <label>
+      <input type="checkbox" name="subscribe"> I’d like to receive exclusive offers and promotions
+    </label>
+
+    <label>
+      <input type="checkbox" name="agree" required> I agree with the Privacy Policy and Terms of Use
+    </label>
+
+    <button type="submit">Sign Up Now</button>
+  </form>
+
+</body>
+</html>
